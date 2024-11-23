@@ -37,31 +37,31 @@ export default function Home() {
     <div className={styles.reviewItem}>  
       <h3>Jane D. - Yoga Enthusiast</h3>  
       <p>  
-        "The intelligent progress tracking feature has completely transformed  
-        my yoga practice. It's like having a personal yoga coach guiding me  
-        through every pose!"  
+        The intelligent progress tracking feature has completely transformed  
+        my yoga practice. It is like having a personal yoga coach guiding me  
+        through every pose!  
       </p>  
     </div>  
     <div className={styles.reviewItem}>  
       <h3>Michael T. - Fitness Coach</h3>  
       <p>  
-        "The durability and design of these products are top-notch. I  
+        The durability and design of these products are top-notch. I  
         recommend them to all my clients looking for reliable and  
-        eco-friendly yoga gear."  
+        eco-friendly yoga gear.  
       </p>  
     </div>  
     <div className={styles.reviewItem}>  
       <h3>Emily R. - Beginner Yogi</h3>  
       <p>  
-        "As a beginner, the personalized guidance has been a game changer.  
-        It's so encouraging to see my progress and stay motivated."  
+        As a beginner, the personalized guidance has been a game changer.  
+        It is so encouraging to see my progress and stay motivated.  
       </p>  
     </div>  
     <div className={styles.reviewItem}>  
       <h3>Raj K. - Professional Yoga Instructor</h3>  
       <p>  
-        "These products are a must-have for any serious yoga practitioner.  
-        The professional-grade insights they offer are unmatched!"  
+        These products are a must-have for any serious yoga practitioner.  
+        The professional-grade insights they offer are unmatched!  
       </p>  
     </div>  
   </div>  
@@ -119,7 +119,7 @@ export default function Home() {
     </div>
   </div>
   {/* Logo centered */}
-  <img
+  <Image
     src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/06/generic-yoga-logo.png?auto=format&q=60&fit=max&w=930"
     alt="Yoga Logo"
     className={styles.footerLogo}

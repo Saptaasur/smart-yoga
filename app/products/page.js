@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
@@ -50,7 +51,7 @@ export default function ProductsPage() {
                 width: '200px',
               }}
             >
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 style={{ width: '100%', borderRadius: '5px' }}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./AdminPanel.module.css";
+import Image from "next/image";
 
 export default function AdminPanel() {
   const [activeTab, setActiveTab] = useState("products");
@@ -137,7 +138,7 @@ function ManageProducts() {
             <p>{product.name}</p>
             <p>{product.description}</p>
             <p>${product.price}</p>
-            <img src={product.image} alt={product.name} width="100" />
+            <Image src={product.image} alt={product.name} width="100" />
             <button className="mr-3" onClick={() => handleEditProduct(product)}>Edit</button>
             <button onClick={() => handleDeleteProduct(product.id)}>Delete</button>
           </li>

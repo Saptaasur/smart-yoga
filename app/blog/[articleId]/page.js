@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 
 const articles = [
@@ -25,7 +26,7 @@ export default function ArticlePage() {
   return (
     <div style={{ padding: '2rem', maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
       <h1 style={{ fontWeight: 600, fontSize: '2.5rem', color: '#333' }}>{article.title}</h1>
-      <img src={article.image} alt={article.title} style={{ width: '70%', maxWidth: '600px', maxHeight: '600px', objectFit: 'cover', objectPosition: 'center', borderRadius: '10px', marginTop: '1rem' }} />
+      <Image src={article.image} alt={article.title} style={{ width: '70%', maxWidth: '600px', maxHeight: '600px', objectFit: 'cover', objectPosition: 'center', borderRadius: '10px', marginTop: '1rem' }} />
       <p style={{ marginTop: '2rem', lineHeight: '1.8', fontSize: '1.125rem', color: '#555' }}>{article.content}</p>
     </div>
   );

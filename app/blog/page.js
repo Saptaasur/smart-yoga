@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import styles from './Blog.module.css';
+import Image from 'next/image';
 
 export default function BlogPage() {
   const [articles, setArticles] = useState([]);
@@ -26,7 +27,7 @@ export default function BlogPage() {
       <div className={styles.articleList}>
         {articles.map((article) => (
           <div key={article._id} className={styles.articleItem}>
-            <img src={article.image} alt={article.title} className={styles.articleImage} />
+            <Image src={article.image} alt={article.title} className={styles.articleImage} />
             <div className={styles.articleContent}>
               <h3>{article.title}</h3>
               <p>{article.preview}</p>
