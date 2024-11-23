@@ -1,0 +1,46 @@
+/* app/admin/AdminPanel.module.css */
+
+.adminPanel {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0070f3;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.tabButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tabButton:hover {
+  background-color: #0070f3;
+  color: white;
+}
+
+.active {
+  background-color: #0070f3;
+  color: white;
+}
+
+.tabContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

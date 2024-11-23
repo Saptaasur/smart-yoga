@@ -1,0 +1,22 @@
+/* app/social-media/SocialMedia.module.css */
+
+.socialMediaPage {
+    padding: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .embedContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .embedIframe {
+    width: 320px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,321 @@
+/* styles/Home.module.css */
+.main {
+  /* Optional padding: you can enable it if you need spacing around the main content */
+  /* padding: 20px; */
+}
+
+.hero {
+  position: relative;
+  min-height: 65vh; /* Adjusted for better mobile responsiveness */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5); /* Darken the image for better readability of text */
+  z-index: -1; /* Keeps the image behind the content */
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10; /* Ensures content stays above the image */
+  padding: 20px; /* Optional padding for the content */
+}
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Hover effect for title and subtitle */
+.heroContent:hover .heroTitle {
+  color: #f8a5c2; /* Soft pink on hover */
+  transform: scale(1.05);
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.heroContent:hover .heroSubtitle {
+  color: #f8a5c2; /* Soft pink on hover */
+  transform: scale(1.05);
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
+
+.shopNowButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0070f3; /* Change to the blue you prefer */
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.shopNowButton:hover {
+  background-color: #005bb5; /* Darken the button on hover */
+}
+
+/* styles/Footer.module.css */
+/* Footer section styles */
+/* styles/Footer.module.css */
+
+/* Footer section styles */
+.footer {
+  background: linear-gradient(90deg, #e211c6, #9d42df);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact h3, .socialMedia h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.socialMedia ul {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center; /* Center icons */
+}
+
+.socialMedia a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialMedia a:hover {
+  color: #ff4d88;
+}
+
+.footerBottom {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact, .socialMedia {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Center the social media icons on mobile */
+  .socialMedia ul {
+    justify-content: center; /* Ensure it's centered */
+    gap: 1rem; /* Adjust gap for mobile */
+  }
+}
+.footerLogo {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+/* styles/Home.module.css */
+
+/* reviews Section */
+.reviews {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.reviewItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reviewItem {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewItem h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2b2b2b;
+  margin-bottom: 1rem;
+}
+
+.reviewItem p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.reviewItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reviewItem:hover h3 {
+  color: #0077ff;
+}
+
+/* Mobile responsiveness for reviews */
+@media (max-width: 768px) {
+  .reviews {
+    padding: 2rem;
+  }
+
+  .reviewItems {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Navbar Styles */
+.nav {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(90deg, #e211c6, #9d42df); /* Gradient background */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background 0.3s ease;
+}
+
+.nav:hover {
+  background: linear-gradient(90deg, #9d42df, #e211c6); /* Swap gradient on hover */
+}
+
+.navLogo {
+  width: 120px; /* Adjust the width of the logo */
+  height: auto;
+  margin-right: 2rem; /* Space between logo and links */
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto; /* Push the links to the right */
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600; /* Bold text */
+  position: relative;
+  padding: 5px 0;
+  display: flex;
+  align-items: center; /* Align the icon and text */
+  gap: 0.5rem; /* Space between icon and text */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.link:hover {
+  color: #f8a5c2; /* Light pink color on hover */
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #f8a5c2; /* Line under the link */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.icon {
+  width: 1.3rem; /* Set a fixed size for icons */
+  height: 1.3rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.link:hover .icon {
+  transform: scale(1.1); /* Slightly increase icon size on hover */
+}
+
+/* Mobile responsiveness for Navbar */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center; /* Center the items on mobile */
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap for better spacing */
+    margin-left: 0;
+    margin-top: 1rem; /* Add top margin to space out links */
+  }
+
+  .navLogo {
+    margin-right: 0; /* Remove space for logo when stacked */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+}
