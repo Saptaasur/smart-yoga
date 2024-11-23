@@ -9,7 +9,7 @@ export default function BlogPage() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/articles'); // Replace with your backend API URL
+        const response = await fetch('https://yoga-backend-tprc.onrender.com/api/articles'); // Replace with your backend API URL
         const data = await response.json();
         setArticles(data);
       } catch (error) {

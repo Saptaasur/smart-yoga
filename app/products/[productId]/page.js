@@ -12,7 +12,7 @@ export default function ProductPage({ params }) {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+        const response = await fetch(`https://yoga-backend-tprc.onrender.com/api/products/${productId}`);
         if (!response.ok) {
           throw new Error('Product not found');
         }
