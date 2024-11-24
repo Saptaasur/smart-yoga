@@ -120,8 +120,10 @@ export default function Home() {
   </div>
   {/* Logo centered */}
   <Image
-    src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/06/generic-yoga-logo.png?auto=format&q=60&fit=max&w=930"
+    src="/yoga-logo.png"
     alt="Yoga Logo"
+    width={930} // Base width
+  height={525} // Computed based on aspect ratio
     className={styles.footerLogo}
   />
   <p className={styles.footerBottom}>
